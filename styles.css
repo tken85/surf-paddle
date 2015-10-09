@@ -57,10 +57,10 @@ body {
 }
 
 .logo > img {
-  height: 20px;
-  position: relative;
-  top: 10px;
-  left: -210px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
 
 }
 .nav img{
@@ -303,4 +303,40 @@ ul{
   list-style: none;
   margin:0;
   padding:0;
+}
+footer {
+  position: relative;
+  text-decoration: none;
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+footer span{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  text-decoration: none;
+  color: yellow;
+}
+footer img{
+  height: 25px;
+  position: absolute;
+  top: 18%;
+  left: 7%;
+
+}
+footer ul{
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+footer li{
+  text-decoration: none;
+  color:yellow;
+  padding-right: 2px;
+  border-right: 1px solid yellow;
+}
+
+footer li:nth-child(4) {
+  border-right: none;
 }
