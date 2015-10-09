@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.header-entire{
+  width: 80%;
+  margin:0 auto;
+  background-image: url("images/meanderika.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow:hidden;
+  height: 300px;
+  position: relative;
+}
+.header-entire:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(98,142,239, 0.5);
+  }
+.header-logo{
+  float:left;
+  position: relative;
+  top: 10px;
+  margin-left: 50px;
+
+}
+
+
+.header-title{
+  display: inline-block;
+  position: relative;
+  top: 80px;
+  text-align: center;
+  width: 100%;
+
+}
+.nav{
+  float: right;
+  position: relative;
+  top: -100px;
+  margin-right: 50px;
+}
+
+#title{
+  font-size: 60px;
+}
+ul{
+  list-style: none;
+}
+
+li{
+  display:inline;
+}
+li img{
+  height: 15px;
+}
+
+.logo > img {
+  height: 20px;
+  position: relative;
+  top: 10px;
+  left: -210px;
+
+}
