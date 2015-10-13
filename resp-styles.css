@@ -7,13 +7,19 @@
 
 @media (max-width:800px){
   .article-footer{
-    display; none;
+    display: none;
   }
   .main-container{
     width: 90%;
   }
   .main {
     width: 99%;
+  }
+  .side{
+    width: 99%;
+  }
+  .sideprofile{
+    width: 10%;
   }
 }
 
@@ -29,11 +35,26 @@
     display: none;
   }
 
+  .logo > ul {
+    display: block;
+    text-align: center;
+    width: 100%;
+    left: 0%;
+    top:10%;
+  }
+
+  .logo > ul li img{
+    height: 100px;
+    text-align: center;
+  }
   header nav{
     display:block;
     text-align: center;
+    position: static;
   }
-
+.header-title{
+  top: 45%;
+}
 
 
 }
@@ -51,4 +72,14 @@
    font-size: 1em;
    font-weight: bold;
  }
+ .sidesection, .side-last{
+   display: none;
+ }
+ #title{
+   font-size: 30px;
+ }
+ .author img, .author a, .on{
+   display: none;
+ }
+
 }

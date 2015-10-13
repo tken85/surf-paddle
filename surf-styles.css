@@ -66,7 +66,7 @@ header:before {
 
 header nav {
   display: inline-block;
-  position: absolute;
+ position: absolute;
   top: 4%;
   right: 15%;
   /*right: 15%;*/
@@ -140,6 +140,7 @@ header nav {
 }
 .side {
   width: 32%;
+  margin-top: 1%;
 }
 
 .sideprofile{
@@ -201,6 +202,16 @@ aside a{
   height:12px;
   background-color: #9797EC;
   vertical-align: text-bottom;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.main-container li:hover{
+  background-color: blue;
+}
+
+.main-container li img:hover{
+  background-color: yellow;
 }
 
 .sidepic{
