@@ -1,0 +1,54 @@
+@media (max-width:1000px){
+  .pic{
+    width: 49%;
+  }
+}
+
+
+@media (max-width:800px){
+  .article-footer{
+    display; none;
+  }
+  .main-container{
+    width: 90%;
+  }
+  .main {
+    width: 99%;
+  }
+}
+
+@media (max-width:700px){
+  .col1 p{
+    font-size: 3em;
+  }
+}
+
+
+@media (max-width:630px){
+  #header-logo{
+    display: none;
+  }
+
+  header nav{
+    display:block;
+    text-align: center;
+  }
+
+
+
+}
+
+@media (max-width: 520px){
+  .col1 p{
+    font-size: 2em;
+  }
+}
+@media (max-width:400px){
+ .pic{
+   width: 99%;
+ }
+ .col1 p{
+   font-size: 1em;
+   font-weight: bold;
+ }
+}

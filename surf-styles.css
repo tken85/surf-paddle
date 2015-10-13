@@ -1,14 +1,32 @@
+/* document wide changes */
 
-/*zero body margins and padding*/
+body{
+  margin:0;
+  padding: 0;
+  font-family: Monaco, monospace;
+  box-sizing: border-box;
+}
 
-body {
+p{
+  font-size: 12px;
+  color:black;
+}
+
+ul{
+  list-style: none;
   margin:0;
   padding:0;
-  font-family: Monaco, monospace, sans-serif;
 }
-.header-entire{
-  width: 80%;
-  margin:0 auto;
+
+li{
+  display: inline;
+}
+/* end document wide */
+
+/* header  style begins */
+
+header{
+  width: 100%;
   background-image: url("images/meanderika.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -17,60 +35,7 @@ body {
   min-height: 300px;
   position: relative;
 }
-.header-entire:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(98,142,239, 0.5);
-  }
-.header-logo{
-  float:left;
-  position: absolute;
-  top: 10px;
-  margin-left: 50px;
 
-}
-
-
-.header-title{
-  display: inline-block;
-  position: relative;
-  top: 80px;
-  text-align: center;
-  width: 100%;
-
-}
-.nav{
-  float: right;
-  position: absolute;
-  top: 10px;
-  left: 800px;
-  margin-right: 50px;
-}
-
-#title{
-  font-size: 60px;
-}
-
-.logo > img {
-  height: 40px;
-  position: absolute;
-  top: 0px;
-  left: 10px;
-
-}
-.nav img{
-  height: 15px;
-}
-
-/*setting hue of background*/
-li img{
-  height:15px;
-}
 header:before {
     content: "";
     display: block;
@@ -80,7 +45,66 @@ header:before {
     left: 0;
     right: 0;
     background: rgba(98,142,239, 0.5);
-  }
+
+}
+
+.content{
+  padding: 5px;
+}
+.logo > ul {
+  position: absolute;
+  left: 13%;
+  display: inline-block;
+}
+.logo > ul li img{
+  height: 40px;
+  /*position: absolute;*/
+  /*top: 0px;
+  left: 10px;*/
+  vertical-align: middle;
+}
+
+header nav {
+  display: inline-block;
+  position: absolute;
+  top: 4%;
+  right: 15%;
+  /*right: 15%;*/
+
+}
+
+.logo nav img{
+  height: 15px;
+}
+
+.header-title{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  width: 100%;
+
+}
+
+#title{
+  font-size: 50px;
+  color: white;
+}
+
+.header-title span:nth-child(3){
+  font-size: 12px;
+}
+
+/* for the magnifying glass pic */
+/*li img{
+  height:15px;
+}*/
+
+/* end of header section ------------- */
+
+
+/*Styling for main two column area */
+
 .author{
   font-size:8px;
 }
@@ -105,21 +129,7 @@ header:before {
   color: blue;
   padding-left: 5%;
 }
-footer {
-  background-color: black;
-  width: 80%;
-  height: 50px;
-  margin: 0 auto;
-}
-p{
-  font-size: 12px;
-  color:black;
-}
 
-.header-text{
-  /*padding-top:25px;*/
-  text-align: center;
-}
 .cols {
   display: inline-block;
   vertical-align: top;
@@ -192,6 +202,21 @@ aside a{
   background-color: #9797EC;
   vertical-align: text-bottom;
 }
+
+.sidepic{
+  width:100%;
+}
+
+.title {
+  font-size: 30px;
+  color: black;
+}
+
+/* end 2 column  main */
+
+
+/* start 1 column More Posts */
+
 .col1 {
   border-top: 1px solid gray;
   text-align:center;
@@ -200,25 +225,36 @@ aside a{
 }
 .col1 p {
   color: black;
-  font-size: 50px;
+  font-size: 4em;
   line-height: 0px;
 }
+
+/*.cols {
+  display: inline-block;
+  vertical-align: top;    ---- this is located elsewhere as well see main container */
+
+/* start Footer */
+
+
+/* 4 pic section ----------------  */
+
 .pic {
-  max-width: 24.2%;
+  width: 25%;
   position: relative;
+  margin-right: -.75%;
+  margin-bottom: -0.25%;
 }
 
 .pic img{
-  max-width:100%;
-  margin:0;
+  width:100%;
+
   padding:0;
+
 }
 .pic a{
   text-decoration: none;
 }
-.sidepic{
-  width:100%;
-}
+
 .pic:before, .author img:before  {
     content: "";
     display: block;
@@ -234,8 +270,8 @@ aside a{
   position: absolute;
   z-index: 1;
   font-size: 30px;
-  left: 10px;
-  top: 200px;
+  left: 5%;
+  top: 75%;
   color:white;
 
 }
@@ -244,21 +280,19 @@ aside a{
     color: black; /*doesn't work*/
   }
 
-li{
-  display: inline;
-}
 
-.title {
-  font-size: 30px;
-  color: black;
-}
+/*.cols {
+  display: inline-block;
+  vertical-align: top;   ---------- already in elsewhere */
 
-ul{
-  list-style: none;
-  margin:0;
-  padding:0;
-}
+/*  end 4 pic section -------------- */
+
+
 footer {
+  background-color: black;
+  width: 100%;
+  min-height: 50px;
+  margin: 0 auto;
   position: relative;
   text-decoration: none;
   font-size: 10px;
@@ -272,11 +306,12 @@ footer span{
   text-decoration: none;
   color: yellow;
 }
+
 footer img{
   height: 25px;
   position: absolute;
   top: 18%;
-  left: 7%;
+  left: 6%;
 
 }
 footer ul{
@@ -294,3 +329,5 @@ footer li{
 footer li:nth-child(4) {
   border-right: none;
 }
+
+/* end footer formatting */
